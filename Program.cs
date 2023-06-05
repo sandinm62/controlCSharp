@@ -8,26 +8,26 @@
 // [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 // [“Russia”, “Denmark”, “Kazan”] → []
 
-string[] CheckArray(string[] array1)
+string[] CheckArray(string[] arrayNew)
 {
     
     int count = 0;
     int countArrayCheck = 0;
-    for(int i = 0; i < array1.Length; i++)
+    for(int i = 0; i < arrayNew.Length; i++)
     {
-        if(array1[i].Length < 4)
+        if(arrayNew[i].Length < 4)
         {
             count++;
         }        
     }
 
     string[] arrayCheck = new string[count];
-    for(int i = 0; i < array1.Length; i++)
+    for(int i = 0; i < arrayNew.Length; i++)
     {
 
-        if(array1[i].Length < 4)
+        if(arrayNew[i].Length < 4)
         {
-            arrayCheck[countArrayCheck] = array1[i];
+            arrayCheck[countArrayCheck] = arrayNew[i];
             countArrayCheck++; 
         }
     }
@@ -44,6 +44,6 @@ void PrintArray(string[] array2)
 }
 
 
-string[] array = {"Hello", "2", "wor", ":-)"};
+string[] array = {"Hello", "-2", "world", ":-)"};
 
 CheckArray(array);
