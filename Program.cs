@@ -8,11 +8,11 @@
 // [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 // [“Russia”, “Denmark”, “Kazan”] → []
 
-string[] CheckArray(string[] arrayNew)
+string[] CheckArray(string[] arrayNew)          //Метод для нахождения элементов в массиве, которые меньше четырёх символов
 {
     
-    int count = 0;
-    int countArrayCheck = 0;
+    int count = 0;                              //Счётчик для определения количества слов меньше 4 символов
+    int countArrayCheck = 0;                    //Счётчик для массива в который мы будем вносить значения
     for(int i = 0; i < arrayNew.Length; i++)
     {
         if(arrayNew[i].Length < 4)
@@ -35,7 +35,7 @@ string[] CheckArray(string[] arrayNew)
     return arrayCheck;
 }
 
-void PrintArray(string[] array2)
+void PrintArray(string[] array2)                //Метод для вывода массива
 {
     for(int i = 0; i < array2.Length; i++)
     {
